@@ -1,1 +1,13 @@
+def count_occurrences(A, number):
+    
+    count = 0
+    for num in A:
+        if num == number:
+            count += 1
+    return count
 
+
+A = [2, 2, 3, 4, 5, 3]
+target_number = 3
+result = count_occurrences(A, target_number)
+print(f"The number {target_number} appears {result} times in the list.")
